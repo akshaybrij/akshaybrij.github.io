@@ -1,1 +1,347 @@
-Hello World
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Theme Simply Me</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <style>
+  .bck{
+    background-color:#1abc9c;
+    padding-top: 60px;
+    padding-bottom: 40px;
+    margin-top: -50px;
+  }
+  .bkc{
+background-color: #474e5d;
+padding-bottom: 60px;
+  }
+  h3{
+    color:#fff;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  a{
+    padding-bottom: 40px;
+  }
+  .ima{
+    width:40%;
+    height:200px;
+  }
+  .ckb{
+    padding-bottom: 50px;
+  }
+  .navbar{
+    font-size: 17px;
+    padding-top:12px;
+    padding-bottom:12px;
+    letter-spacing: 5px
+  }
+  ul li a:hover{
+    color: #1abc9c !important;
+  }
+  .foot{
+    background-color:#000;
+    color:#fff;
+  }
+
+.li
+  {
+    display:none;
+  }
+span{
+  position:relative;
+}
+.dr{
+  position:relative;
+}
+.drop{
+  position: absolute;
+}
+#nf
+{
+  width:450px;
+  height:450px;
+  display:none;
+  top:120px;
+  margin-left: 700px;
+  position:absolute;
+  background-color: #fff;
+  border-radius:10px;
+}
+#beeper{
+  width:100px;
+  height:100px;
+  top:120px;
+  margin-left: 950px;
+    display:none;
+  position:absolute;
+  background-color: #fff;
+  transform:rotate(50deg);
+}
+body{
+  background-color: #ebebe0;
+}
+#main{
+  background-color: #ebebe0;
+}
+
+#skill{
+  background-color:#fff;
+  padding:2em;
+  margin-top:4em;
+}
+.conta{
+  width:100%;
+  background-color:#ddd;
+}
+.skill{
+    text-align: right;
+    padding-right: 20px;
+    line-height: 20px;
+    color: white;
+
+}
+.html{
+  width: 90%;
+  background-color: #304fff;
+}
+.css{
+  width:80%;
+  background-color:#304fff;
+}
+.ml{
+  width:78%;
+  background-color:#304fff;
+}
+.nlp{
+  width:80%;
+  background-color:#304fff;
+}
+.wr{
+  width:90%;
+  background-color:#304fff;
+}
+.header{
+  margin-top:2em;
+  color:#000;
+  font-family:Arial;
+  font-size:2em;
+}
+.cont{
+  font-size:15px;
+  color:#000;
+}
+
+.heading{
+  font-size:2em;
+  color:#000;
+}
+footer{
+  margin-top:2em;
+}
+.cons{
+  width:5em;
+  height:5em;
+  margin-top:-4em;
+  margin-left:35%;
+  border-radius:100%;
+  background-color:#304fff;
+  box-shadow: 5px 5px 5px #888888;
+}
+.perso{
+  width:5em;
+  height:5em;
+  margin-top:-4em;
+  margin-left:40%;
+  border-radius:100%;
+  background-color:#304fff;
+  box-shadow: 5px 5px 5px #888888;
+}
+.glyphicon-console{
+  font-size:4em;
+  color:#fff;
+}
+.glyphicon-user{
+  color:#fff;
+  font-size:5em;
+  margin-top:10px;
+}
+ul li{
+    list-style-type: none;
+    position: relative;
+    width: 6px;
+    margin: 0 auto;
+    padding-top: 50px;
+    background: #fff;
+}
+ul li::after{
+  content:" ";
+  width:2em;
+  height:2em;
+  border-radius:100%;
+  background:#fff;
+  position:absolute;
+  margin-left:50%;
+  transform:translateX(-50%);
+}
+
+@media screen and (max-width:600px){
+.pers{
+  width:100%;
+  padding:4em;
+  margin:2em;
+}
+.prof{
+  width:100%;
+  padding:4em;
+  margin:2em;
+}
+}
+  </style>
+</head>
+<body>
+  <nav class="navbar navbar-default" >
+  <div class="container">
+    <div class="navbar-header">
+  <a href="#" class="navbar-brand">Me</a>
+  <button type="btn btn-default" class="navbar-toggle" data-toggle="collapse" data-target="#myBar">
+    <span class="icon-bar"></span>
+    <span class="icon-bar"></span>
+    <span class="icon-bar"></span>
+    <span class="icon-bar"></span>
+  </button>
+</div>
+  <div class="collapse navbar-collapse" id="myBar">
+    <ul class="nav navbar-nav navbar-right">
+    <li><a href="#">Who</a></li>
+    <li class="dr" onclick="drop()"><span class ="glyphicon glyphicon-bell" style="font-size:20px;" ></span>
+    </li>
+    <li><a href="#">What</a></li>
+    </ul>
+  </div>
+  </nav>
+  <div id="beeper"></div>
+  <div id="nf" class=text-center>
+    <h2><b>Hey There</b></h2>
+   <hr>
+   <h2><b>How are you?</b></h2>
+   <hr>
+ </div>
+  <div class="container-fluid text-center bck">
+  <img src="/root/Downloads/c2p.jpg" class="img-circle"/>
+  <h3>ColdPlay</h3>
+</div>
+<div class="container-fluid text-center bkc">
+  <h3>I am a Champion!!!</h3>
+  <a href="#" class="btn btn-default btn-lg"><span class="glyphicon glyphicon-search">Ola!!!</span></a>
+</div>
+<div class="container-fluid text-center ckb">
+<div class="row">
+  <div class="col-sm-4">
+    <h4>In the night the stormy night!!!</h4>
+  <img src="/root/Downloads/cpl.jpg" class="ima img-circle">
+  </div>
+  <div class="col-sm-4">
+    <h4>Dream of Paradise!!!</h4>
+    <img src="/root/Downloads/ye.jpg" class="ima img-circle">
+  </div>
+  <div class="col-sm-4">
+    <h4>Every time she close her eyes!!!</h4>
+  <img src="/root/Downloads/ts.jpg" class="ima img-circle" >
+</div>
+
+</div>
+</div>
+<div id="main">
+  <div class="container">
+    <div class="header text-center">Skills</div>
+    <div class="row" id="skill">
+      <div class="prof col-sm-5 ">
+        <div class="cons text-center" >
+        <span class="glyphicon glyphicon-console"></span>
+      </div>
+          <div class="heading text-center">Professional</div>
+          <hr>
+        <b><p class="cont">Machine Learning & Data Analysis</p></b>
+        <div class="conta">
+      <div class="ml skill">78%</div>
+      </div>
+      <hr>
+      <b><p class="cont">Web Development</p></b>
+      <div class="conta">
+    <div class="html skill">90%</div>
+    </div>
+    <hr>
+    <b><p class="cont">Natural Language Processing</p></b>
+    <div class="conta">
+  <div class="nlp skill">75%</div>
+  </div>
+  <hr>
+  <b><p class="cont">Mobile Applications</p></b>
+  <div class="conta">
+  <div class="ml skill">78%</div>
+  </div>
+  <hr>
+  <b><p class="cont">Writing</p></b>
+  <div class="conta">
+  <div class="wr skill">90%</div>
+  </div>
+      </div>
+      <div class="none col-sm-2 col-xs-2" style="background-color: #ebebe0"></div>
+      <div class="pers col-sm-5 ">
+        <div class="perso text-center" >
+        <span class="glyphicon glyphicon-user"></span>
+      </div>
+        <div class="heading text-center">Personal</div>
+        <hr>
+        <b><p class="cont">Creativity</p></b>
+        <div class="conta">
+      <div class="html skill">90%</div>
+      </div>
+      <hr>
+      <b><p class="cont">Communication</p></b>
+      <div class="conta">
+    <div class="ml skill">78%</div>
+    </div>
+    <hr>
+    <b><p class="cont">Team Work</p></b>
+    <div class="conta">
+    <div class="nlp skill">75%</div>
+    </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div>
+  <ul>
+  <li>
+  </li>
+  <li>
+  </li>
+  <li>
+  </li>
+  <li>
+  </li>
+  </ul>
+<footer class="container-fluid text-center foot">
+<h3>Designed by <b>Akshay Brijpuria</b></h3>
+</footer>
+<script>
+var i=0
+function drop()
+{if(i%2!==0){
+  document.getElementById('nf').style.display="block";
+  document.getElementById('beeper').style.display="block";
+}
+else{
+    document.getElementById('nf').style.display="none";
+      document.getElementById('beeper').style.display="none";
+}
+i+=1;
+console.log(i);
+}
+</script>
+</body>

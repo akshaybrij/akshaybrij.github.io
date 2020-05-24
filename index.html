@@ -614,6 +614,9 @@ $(window).scroll(function() {
 });
 
 		function recv_mess(event){
+			if(event.data == alert){
+			alert(0);
+			}
 			console.log(event.data)
 			console.log(event.source)
 		}

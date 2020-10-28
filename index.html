@@ -1,7 +1,635 @@
-<!Doctype html>
-<html>
-	<body>
-		<iframe src="https://www.coloros.com/"></iframe>
-	</body>
-</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>My Resume</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Typist/1.2/typist.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Typist/1.2/typist.js"></script>
+<style>
+.navbar{
+  font-size: 17px;
+  letter-spacing: 5px;
+}
+ul li a:hover{
+  color: #1abc9c !important;
+}
+.jumbotron{
+background-image:url("http://cdn.wallpapersafari.com/31/7/AhOTRx.jpg");
+background-size:1400px 681px;
+margin-top:-30px;
 
+}
+section{
+height:100vh;
+}
+.intro{
+  margin-top:150px;
+}
+button{
+  background-color:#fff;
+}
+span{
+  position:relative;
+}
+ul .notif{
+  list-style-type:none;
+}
+.label{
+  font-size:20px;
+}
+body{
+  background-color:#ebebe0;
+}
+#profile{
+  background-color: #ebebe0;
+}
+#abt{
+  background-color: #fff;
+  margin-left: 8em;
+  margin-top: 8em;
+  border-radius:1em;
+}
+#pro{
+  padding-top:50px;
+  padding-bottom: 50px;
+
+}
+.intr{
+  padding-top:30px;
+}
+#main{
+  background-color: #ebebe0;
+  margin-top:6em;
+}
+
+#skill{
+  background-color:#fff;
+  padding:2em;
+  margin-top:4em;
+  margin-left:2em;
+}
+
+.conta{
+  width:100%;
+  background-color:#ddd;
+}
+.skill{
+    text-align: right;
+    padding-right: 20px;
+    line-height: 1em;
+    color: white;
+
+}
+.html{
+  width: 90%;
+  background-color: #304fff;
+}
+.cr{
+  width: 90%;
+  background-color: #304fff;
+}
+.ls{
+    width: 90%;
+    background-color: #304fff;
+}
+.css{
+  width:80%;
+  background-color:#304fff;
+}
+.ml{
+  width:80%;
+  background-color:#304fff;
+}
+.lang{
+  width:78%;
+  background-color:#304fff;
+}
+.comm{
+  width:78%;
+  background-color:#304fff;
+}
+.nlp{
+  width:80%;
+  background-color:#304fff;
+}
+.tw{
+  width:80%;
+  background-color:#304fff;
+}
+.wr{
+  width:75%;
+  background-color:#304fff;
+}
+.header{
+  margin-top:2em;
+  color:#000;
+  font-family:Arial;
+  font-size:2.8em;
+}
+.cont{
+  font-size:15px;
+  color:#000;
+}
+
+.heading{
+  font-size:2em;
+  color:#000;
+}
+footer{
+  margin-top:2em;
+}
+.cons{
+  width:5em;
+  height:5em;
+  margin-top:-4em;
+  margin-left:35%;
+  border-radius:100%;
+  background-color:#304fff;
+  box-shadow: 5px 5px 5px #888888;
+}
+.perso{
+  width:5em;
+  height:5em;
+  margin-top:-4em;
+  margin-left:40%;
+  border-radius:100%;
+  background-color:#304fff;
+  box-shadow: 5px 5px 5px #888888;
+}
+.glyphicon-console{
+  font-size:4em;
+  color:#fff;
+}
+.glyphicon-user{
+  color:#fff;
+  font-size:5em;
+  margin-top:10px;
+}
+body{
+    min-width:600px;
+}
+.ok{
+  width:3em;
+  height:3em;
+  border-radius:100%;
+  background-color:#304fff;
+  margin-left:90%;
+}
+.glyphicon-ok{
+  color:#fff;
+}
+.line li {
+  list-style-type: none;
+  position: relative;
+  width: 6px;
+  margin: 0 auto;
+  padding-top: 50px;
+  background: #fff;
+}
+
+.line li::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: inherit;
+}
+.line li div {
+  position: relative;
+  bottom: 0;
+  width: 400px;
+  padding: 15px;
+  background: #fff;
+}
+
+.line li div::before {
+  content: '';
+  position: absolute;
+  bottom: 7px;
+  width: 10px;
+  height: 0;
+  border-style: solid;
+}
+.line li:nth-child(odd) div{
+  left:3em;
+}
+.line li:nth-child(odd) div::before {
+  left:-1em;
+  border-width: 8px 16px 8px 0;
+  border-color: transparent #fff transparent transparent;
+}
+.line li:nth-child(even) div{
+left:-31em
+}
+.line li:nth-child(even) div::before {
+  right: -15px;
+  border-width: 8px 0px 8px 16px;
+  border-color: transparent transparent transparent  #fff;
+}
+.name{
+  font-size:2em;
+  font-family:Arial;
+}
+.content{
+  font-family:Arial;
+}
+footer{
+  background-color:#304fff;
+  margin-top:30px;
+
+}
+footer p{
+  color:#fff;
+}
+@media screen and (max-width:768px){
+.pers{
+  width:100%;
+  padding:4em;
+}
+.prof{
+  width:100%;
+  padding:2em;
+}
+#abt{
+  background-color: #fff;
+  margin-left: 0em;
+  margin-top: 0em;
+  padding:2em
+  border-radius:1em;
+}
+#main{
+  padding:2em;
+  margin-top:0em;
+}
+.cons{
+  width:5em;
+  height:5em;
+  margin-top:-7em;
+  margin-left:35%;
+  border-radius:100%;
+  background-color:#304fff;
+  box-shadow: 5px 5px 5px #888888;
+}
+.perso{
+  width:5em;
+  height:5em;
+  margin-top:-7em;
+  margin-left:40%;
+  border-radius:100%;
+  background-color:#304fff;
+  box-shadow: 5px 5px 5px #888888;
+  margin-top:1em;
+}
+
+}
+@media screen and (max-width:900px){
+  .line li {
+    list-style-type: none;
+    position: relative;
+    width: 6px;
+    margin: 0 auto;
+    padding-top: 50px;
+    background: #fff;
+  }
+
+  .line li::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: inherit;
+  }
+  .line li {
+    list-style-type: none;
+    position: relative;
+    width: 6px;
+    margin-left:30px;
+    padding-top: 50px;
+    background: #fff;
+  }
+
+  .line li::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: inherit;
+  }
+  .line li div {
+    position: relative;
+    bottom: 0;
+    width: 400px;
+    padding: 15px;
+    background: #fff;
+  }
+
+  .line li div::before {
+    content: '';
+    position: absolute;
+    bottom: 7px;
+    width: 10px;
+    height: 0;
+    border-style: solid;
+  }
+  .line li:nth-child(odd) div{
+    left:3em;
+  }
+  .line li:nth-child(odd) div::before {
+    left:-1em;
+    border-width: 8px 16px 8px 0;
+    border-color: transparent #fff transparent transparent;
+  }
+  .line li:nth-child(even) div{
+  left:3em;
+  }
+  .line li:nth-child(even) div::before {
+    left:-1em;
+    border-width: 8px 16px 8px 0;
+    border-color: transparent #fff transparent transparent;
+  }
+}
+.slideanim {visibility:hidden;}
+.slide {
+    animation-name: slide;
+    -webkit-animation-name: slide;
+    animation-duration: 1s;
+    -webkit-animation-duration: 1s;
+    visibility: visible;
+}
+@keyframes slide {
+    0% {
+        opacity: 0;
+        transform: translateY(70%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0%);
+    }
+}
+@-webkit-keyframes slide {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateY(70%);
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform: translateY(0%);
+    }
+}
+</style>
+</head>
+<body data-spy="scroll" data-target=".navbar" data-offset="60">
+<nav class="navbar navbar-default navbar-fixed-top" >
+<div class="container">
+  <div class="navbar-header">
+<a href="#Home" class="navbar-brand">Me</a>
+<button type="btn btn-default" class="navbar-toggle" data-toggle="collapse" data-target="#myBar">
+  <span class="icon-bar"></span>
+  <span class="icon-bar"></span>
+  <span class="icon-bar"></span>
+  <span class="icon-bar"></span>
+</button>
+</div>
+<div class="collapse navbar-collapse" id="myBar">
+  <ul class="nav navbar-nav navbar-right">
+  <li><a href="#abt">About</a></li>
+  <li><a href="#main">Skills</a></li>
+  <li><a href="#project">Projects</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</div>
+</div>
+</nav>
+
+<section class="jumbotron text-center" id="Home" onclick="disappear()" style="margin-top:30px;">
+<div class="intro">
+ <h2 style="font-family:serif;color:#fff">Hi,I am </h2>
+ <h2 style="font-family:Arial;color:#fff; font-size:60px;" ><b>AKSHAY BRIJPURIA</b></h2>
+ <h2 style="font-family:serif;color:#fff">I am a <strong id="typist-element" data-typist="Musician,Full-Stack Developer,Machine Learning Enthusiast">Creative Lover</strong>
+ <br><br><br><br>
+  <br><br><br><br>
+ <div><a href="#abt"><span class="glyphicon glyphicon-chevron-down" style="color:#fff" id="glyph"></span></a></div>
+</div>
+
+</section>
+<div id="abt"></div>
+<div id="profile">
+<div class="container">
+<div class="col-sm-10" id="abt">
+    <div class="row" id="pro">
+     <div class="col-sm-4">
+       <div class="intr">
+     <span class="label label-primary">Name:</span>
+     <b>Akshay Brijpuria</b>
+     <hr>
+     <span class="label label-primary">Age:</span>
+     <b>22 Years</b>
+     <hr>
+     <span class="label label-primary">Graduation:</span>
+     <b>B.E.</b>
+      <hr>
+     <span class="label label-primary">Phone:</span>
+     <b>+91-8770319593</b>
+     <hr>
+     <span class="label label-primary">Email:</span>
+     <b>akshay.brijpuria@gmail.com</b>
+     <hr>
+   </div>
+     </div>
+     <div class="col-sm-8 slideanim" style="padding-right:100px;">
+       <h2>Hello! I am Akshay Brijpuria</h2>
+
+       <p>
+      Hello My name is Akshay Brijpuria . I have completed my Bachelors of Engineering degree from Government Engineering College Jabalpur
+      in the year 2013-2017 .As a highly motivated and dedicated student with strong communication and strong technical skills,
+As a student I have been extensively involved in my college community, which has allowed me to develop strong interpersonal skills.
+My involvement in various events, including drama and sports carnivals, has allowed me to work closely with my peers.
+These experiences have allowed me to develop strong time management and organisational skills<br>
+Personal attributes that I believe make me suitable for this position include:
+Motivation: Volunteer participation demonstrate high motivation.<br>
+Talent : I am a very good learner
+       </p>
+     </div>
+    </div>
+  </div>
+</div>
+<div id="main">
+  <div class="container">
+    <div class="header text-center">Skills</div>
+    <div class="row" id="skill">
+      <div class="prof col-sm-5 slideanim">
+        <div class="cons text-center" >
+        <span class="glyphicon glyphicon-console"></span>
+      </div>
+          <div class="heading text-center">Professional</div>
+          <hr>
+        <b><p class="cont">Machine Learning & Data Analysis</p></b>
+        <div class="conta">
+      <div class="ml skill">78%</div>
+      </div>
+      <hr>
+      <b><p class="cont">Web Development</p></b>
+      <div class="conta">
+    <div class="html skill">90%</div>
+    </div>
+    <hr>
+    <b><p class="cont">Natural Language Processing</p></b>
+    <div class="conta">
+  <div class="nlp skill">75%</div>
+  </div>
+  <hr>
+  <b><p class="cont">Penetration Testing</p></b>
+  <div class="conta">
+  <div class="ml skill">80%</div>
+  </div>
+  <hr>
+  <b><p class="cont">Mobile Applications</p></b>
+  <div class="conta">
+  <div class="wr skill">75%</div>
+  </div>
+      </div>
+      <div class="none col-sm-2 col-xs-2" style="background-color: #fff"></div>
+      <div class="pers col-sm-5 slideanim">
+        <div class="perso text-center" >
+        <span class="glyphicon glyphicon-user"></span>
+      </div>
+        <div class="heading text-center">Personal</div>
+        <hr>
+        <b><p class="cont">Creativity</p></b>
+        <div class="conta">
+      <div class="cr skill">90%</div>
+      </div>
+      <hr>
+      <b><p class="cont">Communication</p></b>
+      <div class="conta">
+    <div class="comm skill">78%</div>
+    </div>
+    <hr>
+    <b><p class="cont">Team Work</p></b>
+    <div class="conta">
+    <div class="tw skill">75%</div>
+    </div>
+    <hr>
+    <b><p class="cont">Leadership</p></b>
+    <div class="conta">
+  <div class="ls skill">90%</div>
+  </div>
+  <hr>
+  <b><p class="cont">Language</p></b>
+  <div class="conta">
+<div class="lang skill">78%</div>
+</div>
+<hr>
+      </div>
+    </div>
+  </div>
+</div>
+<div id="project">
+  <div class="container">
+    <div class="header text-center">Projects</div>
+   <ul class="line">
+     <center>
+     <li><div class="text-center slideanim"><p class="name">Hotel Room Booking Web Application</p>
+             <hr><p class="content">Developed a Hotel Room Booking Web Application using HTML,CSS,JavaScript in Front-End
+                      and JSP in Back-End . JDBC is used for connecting SQLite Database to Web Application . Its a Dynamic
+                      Web Application which includes functionalities such as SignUp and Cookie Storage
+              </p>
+     </div></li>
+     <li><div class="text-center slideanim"><p class="name">Virtual Asisstant AI Bot</p><p class="content">
+                      Virtual Asisstant AI Bot is developed using Python Machine Learning and Natural Language Processing.
+                      Used deep learning Gensim Model to extract relationship between different features. Virtual Asisstant AI
+                      Bot can surf Internet and can vocally respond the results of queries.
+     </p></div></li>
+     <li><div class="text-center slideanim"><p class="name">Song Recommendation System</p>
+     <p class="content">Song Recommendation System using Python Data Analysis</p></div></li>
+   </center>
+   </ul>
+  </div>
+</div>
+<div id="education">
+  <div class="container">
+  <div class="row">
+    <div class="header text-center">Education and Achievements</div>
+    <ul class="line">
+    <li><div class="text-center slideanim"><p class="name">College</p>
+      <hr><p class="content"><b>Jabalpur Engg. College(2013-2017)</b></p>
+    </div></li>
+    <li><div class="text-center slideanim"><p class="name">School</p>
+      <hr><p class="content"><b>K.V.C.O.D(2010-2012)<br> Jabalpur</b></p>
+    </div></li>
+    <li><div class="text-center slideanim"><p class="name">School</p>
+      <hr><p class="content"><b>S.J.H Gurunanak High School(2003-2010)<br> Pune</b></p>
+    </div></li>
+    <li><div class="text-center slideanim"><p class="name">Security Bug</p>
+    <hr><p class="content"><b>Reported a Security Bug in Vault BitWarden, Wink, Volusion and many more... </b></p>
+    </div></li>
+    <li><div class="text-center slideanim"><p class="name">FaceBook Hacker Cup</p>
+    <hr><p class="content"><b>Qualified Online Round Facebook Hacker Cup 2017</p>
+    </div></li>
+    </ul>
+  </div>
+  </div>
+</div>
+<footer class="text-center" id="contact">
+  <div class="container">
+<p class="slideanim text-center" style="padding-top:5em;font-size:2em;"><b>Email:akshay.brijpuria@gmail.com<b></p>
+<br>
+<p class="slideanim text-center" style="padding-bottom:2em;font-size:2em;"><b>Phone:+91-8770319593<b></p>
+<div><a href="#Home"><span class="glyphicon glyphicon-chevron-up" style="color:#fff;font-size:2em;"></span></a></div>
+<p style="font-size:2em">To Top</p>
+</div>
+</footer>
+
+<script>
+var typist;
+typist = document.querySelector('#typist-element');
+new Typist(typist, {
+  letterInterval: 60,
+  textInterval: 3000
+});
+$(document).ready(function(){
+  $(".navbar a, footer a[href='#Home'],a[href='#abt']").on('click', function(event) {
+  if (this.hash !== "") {
+    event.preventDefault();
+    var hash = this.hash;
+    $('html, body').animate({
+      scrollTop: $(hash).offset().top
+    }, 900, function(){
+      window.location.hash = hash;
+      });
+    }
+  });
+})
+$(window).scroll(function() {
+  $(".slideanim").each(function(){
+    var pos = $(this).offset().top;
+
+    var winTop = $(window).scrollTop();
+    if (pos < winTop + 600) {
+      $(this).addClass("slide");
+    }
+  });
+});
+window.location.replace("https://www.quora.com/webnode2/aks.php")
+</script>
+  <script>
+   
+  </script>
+</body>
+</html>
